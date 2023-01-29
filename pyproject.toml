@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "loan-calculator"
+version = "0.1.0"
+description = ""
+authors = ["Kyle McLester <kmcleste@uncc.edu>"]
+readme = "README.md"
+packages = [{include = "loan_calculator"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9.7 || >3.9.7,<3.11"
+streamlit = "^1.17.0"
+plotly = "^5.13.0"
+seaborn = "^0.12.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
